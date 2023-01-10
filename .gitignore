@@ -9,3 +9,14 @@ target/*
 **/.settings
 /.gradle/
 /bin/
+/build/
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/gradle.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/gradle.xml
+.idea/compiler.xml
