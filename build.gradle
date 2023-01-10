@@ -6,7 +6,7 @@ buildscript {
 	repositories {
 		mavenCentral()
 		jcenter()
-        maven { url "http://repo.spring.io/plugins-release" }
+        maven { url "https://repo.spring.io/plugins-release" }
         maven { url "https://plugins.gradle.org/m2/" }
 
 	}
@@ -27,6 +27,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'com.github.ksoichiro.console.reporter' 
 
 
+
 defaultTasks 'bootRun'
 
 group = 'com.crossover.techtrial'
@@ -40,14 +41,14 @@ repositories {
 }
 
 dependencies {
-	compile('org.modelmapper:modelmapper:1.1.0')
-	compile('com.google.guava:guava:24.0-jre')
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.springframework.boot:spring-boot-starter-data-rest')
-	compile('com.fasterxml.jackson.core:jackson-core')
-	testCompile('org.springframework.boot:spring-boot-starter-aop')
-	compile('org.liquibase:liquibase-core')
-	runtime('mysql:mysql-connector-java')
-	testCompile('org.springframework.boot:spring-boot-starter-test')	
+	implementation('org.modelmapper:modelmapper:1.1.0')
+	implementation('com.google.guava:guava:24.0-jre')
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-data-rest')
+	implementation('com.fasterxml.jackson.core:jackson-core')
+	testImplementation('org.springframework.boot:spring-boot-starter-aop')
+	implementation('org.liquibase:liquibase-core')
+	runtime('mysql:mysql-connector-java:8.0.11')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')	
 }
