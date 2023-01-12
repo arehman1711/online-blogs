@@ -20,6 +20,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+//apply plugin: 'maven'
 apply plugin: "jacoco"
 apply plugin: "io.spring.dependency-management"
 apply plugin: 'org.springframework.boot'
@@ -40,9 +41,6 @@ repositories {
 	jcenter()
 }
 
-bootRun {
-    addResources = true
-}
 dependencies {
 	implementation('org.modelmapper:modelmapper:1.1.0')
 	implementation('com.google.guava:guava:24.0-jre')
